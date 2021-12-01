@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    tools:context=".RadicarPqrsd">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#FB0808"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="89dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="308dp"
+            android:baselineAligned="false"
+            android:contentDescription="@string/Bar"
+            app:srcCompat="@drawable/barra"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="42dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/BotonInicio"
+        android:onClick="Inicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/BotonRadicarPqrsd"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="373dp"
+        android:layout_height="128dp"
+        android:ems="10"
+        android:hint="@string/Hint_Descripcion"
+        android:inputType="textLongMessage"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAsunto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtE_mail"
+        android:layout_width="381dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/Hint_E_mail"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <EditText
+        android:id="@+id/txtAsunto"
+        android:layout_width="376dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:hint="@string/Hint_Asunto"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtCedula"
+        android:layout_width="381dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/Hint_Cedula"
+        android:inputType="number"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <EditText
+        android:id="@+id/txtTipo"
+        android:layout_width="380dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="@string/Hint_Tipo"
+        android:inputType="textAutoComplete"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtE_mail"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="382dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="@string/Hint_Telefono"
+        android:inputType="phone"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCedula"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="386dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="@string/Hint_Nombre"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D33A3A"
+        android:backgroundTint="#D54444"
+        android:text="@string/BotonRadicarPqrsd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        app:layout_constraintVertical_bias="0.09" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

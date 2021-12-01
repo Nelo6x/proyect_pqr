@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PQRSD</string>
+    <string name="BotonInicio">Inicio</string>
+    <string name="BotonRadicarPqrsd">Radicar PQRSD</string>
+    <string name="BotonConsultarPqrsd">Consulta PQRSD</string>
+    <string name="Logo">Logo</string>
+    <string name="Lupa">Lupa</string>
+    <string name="IniciarSesion">Iniciar Sesion</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Recuperar">Recuperar contraseña</string>
+    <string name="Salir">Salir</string>
+    <string name="Nuevos">Casos Nuevos</string>
+    <string name="EnProceso">Casos en proceso</string>
+    <string name="Finalizados">Casos Finalizados</string>
+    <string name="Bar">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="Actualizar">Actualizar</string>
+    <string name="Hint_Nombre">Nombre Completo:</string>
+    <string name="Hint_Cedula">No. Cedula:</string>
+    <string name="Hint_Telefono">Teléfono:</string>
+    <string name="Hint_E_mail">Correo:</string>
+    <string name="Hint_Tipo">Tipo de radicado:</string>
+    <string name="Hint_Asunto">Asunto: *</string>
+    <string name="Hint_Descripcion">Descripcion: *</string>
+</resources>
