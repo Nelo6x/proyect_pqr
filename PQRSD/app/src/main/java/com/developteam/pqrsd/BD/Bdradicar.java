@@ -2,9 +2,14 @@ package com.developteam.pqrsd.BD;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
+
+import com.developteam.pqrsd.entidades.Radicados;
+
+import java.util.ArrayList;
 
 public class Bdradicar  extends BdHelper {
 
@@ -38,5 +43,37 @@ public class Bdradicar  extends BdHelper {
             ex.toString();
         }
         return id;
+    }
+
+    public ArrayList<Radicados> mostrarRadicados(){
+
+        BdHelper bdHelper = new BdHelper(context);
+        SQLiteDatabase bd = bdHelper.getWritableDatabase();
+
+        ArrayList<Radicados> listaRadicados = new ArrayList<>();
+        Radicados radicado = null;
+        Cursor cursorRadicados = null;
+
+        cursorRadicados = bd.rawQuery("SELECT * FROM " + TABLE_RADICADOS, null);
+
+        if (cursorRadicados.moveToFirst()){
+            do {
+                radicado = new Radicados();
+                radicado.setId(cursorRadicados.getInt(0));
+                radicado.setNombre(cursorRadicados.getString(1));
+                radicado.setCedula(cursorRadicados.getString(2));
+                radicado.setTelefono(cursorRadicados.getString(3));
+                radicado.setE_mail(cursorRadicados.getString(4));
+                radicado.setTipo(cursorRadicados.getString(5));
+                radicado.setAsunto(cursorRadicados.getString(6));
+                radicado.setDescripcion(cursorRadicados.getString(7));
+                radicado.setRespuesta(cursorRadicados.getString(9));
+                listaRadicados.add(radicado);
+            } while (cursorRadicados.moveToNext());
+        }
+
+        cursorRadicados.close();
+
+        return listaRadicados;
     }
 }

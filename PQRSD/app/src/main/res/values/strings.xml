@@ -10,7 +10,7 @@
     <string name="Contraseña">Contraseña</string>
     <string name="Recuperar">Recuperar contraseña</string>
     <string name="Salir">Salir</string>
-    <string name="Nuevos">Casos Nuevos</string>
+    <string name="Nuevos">Gestion de Casos</string>
     <string name="EnProceso">Casos en proceso</string>
     <string name="Finalizados">Casos Finalizados</string>
     <string name="Bar">TODO</string>
@@ -24,4 +24,5 @@
     <string name="Hint_Tipo">Tipo de radicado:</string>
     <string name="Hint_Asunto">Asunto: *</string>
     <string name="Hint_Descripcion">Descripcion: *</string>
+    <string name="Hint_Respuesta">Respuesta:</string>
 </resources>

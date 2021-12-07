@@ -20,44 +20,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="310dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="416dp"
-        android:backgroundTint="#7C7A7A"
-        android:onClick="Inicio"
-        android:text="@string/Finalizados"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.415"
-        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="312dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="504dp"
-        android:backgroundTint="#7C7A7A"
-        android:onClick="Inicio"
-        android:text="@string/EnProceso"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
-        app:layout_constraintVertical_bias="0.415"
         tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
 
     <Button
@@ -67,7 +29,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginBottom="592dp"
         android:backgroundTint="#7C7A7A"
-        android:onClick="Inicio"
+        android:onClick="Casos"
         android:text="@string/Nuevos"
         android:textColor="#000000"
         android:textSize="24sp"

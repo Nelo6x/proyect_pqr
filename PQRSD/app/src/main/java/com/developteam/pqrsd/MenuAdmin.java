@@ -22,4 +22,9 @@ public class MenuAdmin extends AppCompatActivity {
         Intent BDconfig = new Intent(this, BDconfig.class);
         startActivity(BDconfig);
     }
+
+    public void Casos(View view) {
+        Intent Casos = new Intent(this, Casos.class);
+        startActivity(Casos);
+    }
 }
